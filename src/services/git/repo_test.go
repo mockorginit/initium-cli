@@ -56,7 +56,7 @@ func TestGetGithubOrg(t *testing.T) {
 		t.Error(err)
 	}
 
-	if name != "nearform" {
+	if name != "mockorginit" {
 		t.Error("Org doesn't match the git repo org")
 	}
 
