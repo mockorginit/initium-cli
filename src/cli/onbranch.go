@@ -89,7 +89,7 @@ func (c icli) OnBranchCMD() *cli.Command {
 
 			if ctx.String("branchName") != "" {
 				branchName = ctx.String("branchName")
-			}
+			} //enable ci
 
 			ctx.Set(appVersionFlag, utils.EncodeRFC1123(branchName))
 			ctx.Set(namespaceFlag, utils.EncodeRFC1123(branchName))
